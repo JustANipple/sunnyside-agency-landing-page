@@ -1,2 +1,5 @@
 @use "scss/base/reset";
 @use "scss/abstracts/variables" as v;
+
+@use "scss/components/header";
+@use "scss/components/nav";
