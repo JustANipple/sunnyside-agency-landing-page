@@ -1,3 +1,5 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -31,4 +33,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Primary colors */
+/* Neutral colors *//*# sourceMappingURL=main.css.map */
