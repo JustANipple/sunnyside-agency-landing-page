@@ -1,0 +1,68 @@
+@use "../abstracts/variables" as v;
+
+.testimonials {
+    display: grid;
+    place-content: center;
+    align-items: start;
+    gap: 4rem;
+    text-align: center;
+    padding-block: 4rem 5.5rem;
+    padding-inline: 1.5rem;
+    background-color: v.$almost-white;
+
+    @media screen and (min-width: v.$min-width) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &
+}
+
+.testimonials_title {
+    font-family: v.$ff-fraunces;
+    font-size: calc(v.$fs / 1.125);
+    font-weight: v.$fw-fraunces-black;
+    color: v.$grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+
+    @media screen and (min-width: v.$min-width) {
+        grid-column: 1/-1;
+    }
+}
+
+.testimonial {
+    display: grid;
+    row-gap: 2.5rem;
+    max-width: 22rem;
+}
+
+.testimonial_img {
+    max-width: 4rem;
+    border-radius: 100vw;
+    margin-inline: auto;
+}
+
+.testimonial_paragraph {
+    font-family: v.$ff-barlow;
+    font-size: v.$fs;
+    color: v.$very-dark-grayish-blue;
+    line-height: 1.75;
+}
+
+.testimonial_info {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.info_name {
+    font-family: v.$ff-fraunces;
+    font-weight: v.$fw-fraunces-black;
+    font-size: v.$fs;
+    color: v.$very-dark-desaturated-blue;
+}
+
+.info_role {
+    font-family: v.$ff-barlow;
+    font-size: calc(v.$fs / 1.325);
+    color: v.$grayish-blue;
+}

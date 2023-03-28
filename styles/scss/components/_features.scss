@@ -1,10 +1,12 @@
 @use "../abstracts/variables" as v;
 
 .cont_features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
+    @media screen and (min-width: v.$min-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 .feature {
     text-align: center;
@@ -14,6 +16,7 @@
 .feature:nth-child(2) {
     display: grid;
     grid-template-rows: 1fr 1.4fr;
+    background-color: v.$almost-white;
 
     @media screen and (min-width: v.$min-width) {
         grid-template-rows: unset;
