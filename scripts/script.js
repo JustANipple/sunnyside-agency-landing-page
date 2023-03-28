@@ -2,6 +2,9 @@ const hamburgerIcon = document.querySelector(".nav_hamburger");
 const menu = document.querySelector(".nav_menu");
 menu.setAttribute("status", "closed");
 const contactButton = document.querySelector(".menu_button");
+const redirects = document.querySelectorAll(".content_redirect");
+
+const temp = document.querySelector(".feature_content");
 
 // change opacity of hamburger icon on mouseover and mouseout
 hamburgerIcon.addEventListener("mouseover", (event) => {
@@ -35,4 +38,17 @@ contactButton.addEventListener("mouseover", (event) => {
 contactButton.addEventListener("mouseout", (event) => {
     contactButton.style.transition = "all .5s ease-in-out";
 });
+
+// change bottom line color of "learn more" on mouseover and mouseout
+for(const redirect of redirects) {
+    redirect.addEventListener("mouseover", (event) => {
+        redirect.children[0].style.opacity = "1";
+        redirect.children[0].style.transition = "all .25s ease-in-out";
+    });
+    redirect.addEventListener("mouseout", (event) => {
+        redirect.children[0].style.opacity = "30%";
+        redirect.children[0].style.transition = "all .25s ease-in-out";
+    });
+}
+
 
