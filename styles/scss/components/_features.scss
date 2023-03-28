@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as v;
+
+.feature {
+    text-align: center;
+}
+
+.feature:nth-child(1),
+.feature:nth-child(2) {
+    display: grid;
+    grid-template-rows: 1fr 1.4fr;
+}
+
+.feature:nth-child(3),
+.feature:nth-child(4) {
+    height: 37.5rem;
+    display: grid;
+    align-items: end;
+}
+
+/* images */
+.feature:nth-child(1) > .feature_img,
+.feature:nth-child(2) > .feature_img,
+.feature:nth-child(3),
+.feature:nth-child(4) {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature:nth-child(1) > .feature_img {
+    background-image: url(../../../images/mobile/image-transform.jpg);
+}
+
+.feature:nth-child(2) > .feature_img {
+    background-image: url(../../../images/mobile/image-stand-out.jpg);
+}
+
+.feature:nth-child(3) {
+    background-image: url(../../../images/mobile/image-graphic-design.jpg);
+}
+
+.feature:nth-child(4) {
+    background-image: url(../../../images/mobile/image-photography.jpg);
+}
+
+/* content */
+.feature_content:nth-child(1),
+.feature_content:nth-child(2) {
+    display: grid;
+    row-gap: 2rem;
+    padding-block: 4.5rem;
+    padding-inline: 1.5rem;
+}
+
+/* title */
+.content_title {
+    font-family: v.$ff-fraunces;
+    font-weight: v.$fw-fraunces-black;
+    font-size: calc(v.$fs * 1.75);
+}
+
+.feature:nth-child(1) .content_title,
+.feature:nth-child(2) .content_title {
+    color: v.$very-dark-desaturated-blue;
+}
+
+/* paragraph */
+.feature:nth-child(1) .content_paragraph,
+.feature:nth-child(2) .content_paragraph {
+    font-family: v.$ff-barlow;
+    font-size: v.$fs;
+    color: v.$dark-grayish-blue;
+    line-height: 1.5;
+}
