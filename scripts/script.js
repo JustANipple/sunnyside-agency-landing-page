@@ -1,6 +1,6 @@
 const hamburgerIcon = document.querySelector(".nav_hamburger");
 const menu = document.querySelector(".nav_menu");
-menu.setAttribute("status", "closed");
+menu.setAttribute("status", "is-closed");
 const contactButton = document.querySelector(".menu_button");
 const redirects = document.querySelectorAll(".content_redirect");
 const footerLinks = document.querySelectorAll(".option");
@@ -22,14 +22,14 @@ hamburgerIcon.addEventListener("mouseout", (event) => {
 hamburgerIcon.addEventListener("click", changeStatus);
 
 function changeStatus() {
-    if(menu.getAttribute("status") === "open") {
+    if(menu.getAttribute("status") === "is-open") {
         menu.style.transform = "scale(0)";
         menu.style.transition = "all .5s ease-in-out";
-        menu.setAttribute("status", "closed");
-    } else if (menu.getAttribute("status") === "closed") {
+        menu.setAttribute("status", "is-closed");
+    } else if (menu.getAttribute("status") === "is-closed") {
         menu.style.transform = "scale(1)";
         menu.style.transition = "all .5s ease-in-out";
-        menu.setAttribute("status", "open");
+        menu.setAttribute("status", "is-open");
     }
 }
 
