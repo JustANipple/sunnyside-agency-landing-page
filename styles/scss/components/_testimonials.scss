@@ -2,8 +2,6 @@
 
 .testimonials {
     display: grid;
-    place-content: center;
-    align-items: start;
     gap: 4rem;
     text-align: center;
     padding-block: 4rem 5.5rem;
@@ -11,10 +9,23 @@
     background-color: v.$almost-white;
 
     @media screen and (min-width: v.$min-width) {
-        grid-template-columns: 1fr 1fr 1fr;
+        padding-block: 10rem;
+        gap: 5rem;
     }
+}
 
-    &
+.testimonials_container {
+    display: grid;
+    place-content: center;
+    row-gap: 4rem;
+
+    @media screen and (min-width: v.$min-width) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5rem;
+        column-gap: 2rem;
+    }
 }
 
 .testimonials_title {
@@ -27,6 +38,7 @@
 
     @media screen and (min-width: v.$min-width) {
         grid-column: 1/-1;
+        font-size: calc(v.$fs * 1.125);
     }
 }
 
@@ -34,10 +46,14 @@
     display: grid;
     row-gap: 2.5rem;
     max-width: 22rem;
+
+    @media screen and (min-width: v.$min-width) {
+        row-gap: 3.5rem;
+    }
 }
 
 .testimonial_img {
-    max-width: 4rem;
+    max-width: 4.5rem;
     border-radius: 100vw;
     margin-inline: auto;
 }
@@ -52,6 +68,10 @@
 .testimonial_info {
     display: grid;
     row-gap: 1rem;
+
+    @media screen and (min-width: v.$min-width) {
+        padding-top: 1rem;
+    }
 }
 
 .info_name {

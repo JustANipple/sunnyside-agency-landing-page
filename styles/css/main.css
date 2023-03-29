@@ -373,6 +373,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   margin-inline: auto;
   position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 48rem) {
   .content_redirect {
@@ -401,8 +402,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .testimonials {
   display: grid;
-  place-content: center;
-  align-items: start;
   gap: 4rem;
   text-align: center;
   padding-block: 4rem 5.5rem;
@@ -411,7 +410,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 48rem) {
   .testimonials {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding-block: 10rem;
+    gap: 5rem;
+  }
+}
+
+.testimonials_container {
+  display: grid;
+  place-content: center;
+  row-gap: 4rem;
+}
+@media screen and (min-width: 48rem) {
+  .testimonials_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+    column-gap: 2rem;
   }
 }
 
@@ -426,6 +441,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 48rem) {
   .testimonials_title {
     grid-column: 1/-1;
+    font-size: 1.265625rem;
   }
 }
 
@@ -434,9 +450,14 @@ p, h1, h2, h3, h4, h5, h6 {
   row-gap: 2.5rem;
   max-width: 22rem;
 }
+@media screen and (min-width: 48rem) {
+  .testimonial {
+    row-gap: 3.5rem;
+  }
+}
 
 .testimonial_img {
-  max-width: 4rem;
+  max-width: 4.5rem;
   border-radius: 100vw;
   margin-inline: auto;
 }
@@ -452,6 +473,11 @@ p, h1, h2, h3, h4, h5, h6 {
   display: grid;
   row-gap: 1rem;
 }
+@media screen and (min-width: 48rem) {
+  .testimonial_info {
+    padding-top: 1rem;
+  }
+}
 
 .info_name {
   font-family: "Fraunces", serif;
@@ -464,4 +490,71 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Barlow", sans-serif;
   font-size: 0.8490566038rem;
   color: hsl(210, 4%, 67%);
+}
+
+.pictures_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (min-width: 48rem) {
+  .pictures_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: unset;
+  }
+}
+
+.picture {
+  height: 11.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 48rem) {
+  .picture {
+    height: 28rem;
+  }
+}
+
+.picture:nth-child(1) {
+  background-image: url(../../../images/mobile/image-gallery-milkbottles.jpg);
+}
+@media screen and (min-width: 48rem) {
+  .picture:nth-child(1) {
+    background-image: url(../../../images/desktop/image-gallery-milkbottles.jpg);
+  }
+}
+
+.picture:nth-child(2) {
+  background-image: url(../../../images/mobile/image-gallery-orange.jpg);
+}
+@media screen and (min-width: 48rem) {
+  .picture:nth-child(2) {
+    background-image: url(../../../images/desktop/image-gallery-orange.jpg);
+  }
+}
+
+.picture:nth-child(3) {
+  background-image: url(../../../images/mobile/image-gallery-cone.jpg);
+}
+@media screen and (min-width: 48rem) {
+  .picture:nth-child(3) {
+    background-image: url(../../../images/desktop/image-gallery-cone.jpg);
+  }
+}
+
+.picture:nth-child(4) {
+  background-image: url(../../../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+@media screen and (min-width: 48rem) {
+  .picture:nth-child(4) {
+    background-image: url(../../../images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+
+.foot {
+  background-color: hsl(168, 44%, 69%);
+}
+
+.foot_logo {
+  filter: invert(33%) sepia(74%) saturate(338%) hue-rotate(117deg) brightness(50%) contrast(90%);
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as v;
+
+.pictures_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @media screen and (min-width: v.$min-width) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: unset;
+    }
+}
+
+.picture {
+    height: 11.75rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: v.$min-width) {
+        height: 28rem;
+    }
+}
+
+.picture:nth-child(1) {
+    background-image: url(../../../images/mobile/image-gallery-milkbottles.jpg);
+
+    @media screen and (min-width: v.$min-width) {
+        background-image: url(../../../images/desktop/image-gallery-milkbottles.jpg);
+    }
+}
+
+.picture:nth-child(2) {
+    background-image: url(../../../images/mobile/image-gallery-orange.jpg);
+
+    @media screen and (min-width: v.$min-width) {
+        background-image: url(../../../images/desktop/image-gallery-orange.jpg);
+    }
+}
+
+.picture:nth-child(3) {
+    background-image: url(../../../images/mobile/image-gallery-cone.jpg);
+
+    @media screen and (min-width: v.$min-width) {
+        background-image: url(../../../images/desktop/image-gallery-cone.jpg);
+    }
+}
+
+.picture:nth-child(4) {
+    background-image: url(../../../images/mobile/image-gallery-sugar-cubes.jpg);
+
+    @media screen and (min-width: v.$min-width) {
+        background-image: url(../../../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}

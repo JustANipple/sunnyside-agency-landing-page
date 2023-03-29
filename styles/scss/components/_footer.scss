@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+
+.foot {
+    background-color: v.$footer-bg;
+}
+
+.foot_logo {
+    // https://codepen.io/jumarjuaton/full/mdJYWYq
+    filter: invert(33%) sepia(74%) saturate(338%) hue-rotate(117deg) brightness(50%) contrast(90%);
+}
