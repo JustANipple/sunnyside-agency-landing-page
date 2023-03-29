@@ -33,7 +33,7 @@
     font-size: calc(v.$fs * 2.25);
     font-weight: v.$fw-fraunces-black;
     color: v.$white;
-    letter-spacing: .375rem;
+    letter-spacing: .5rem;
 
     @media screen and (min-width: v.$min-width) {
         font-size: calc(v.$fs * 3);

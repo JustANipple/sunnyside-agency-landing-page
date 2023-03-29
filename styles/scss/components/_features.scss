@@ -136,7 +136,7 @@
     font-size: calc(v.$fs * 1.75);
 
     @media screen and (min-width: v.$min-width) {
-        font-size: calc(v.$fs * 2.5);
+        font-size: calc(v.$fs * 2.25);
     }
 }
 
@@ -166,6 +166,12 @@
     font-size: v.$fs;
     color: v.$dark-grayish-blue;
     line-height: 1.75;
+}
+
+.feature:nth-child(2) .content_paragraph {
+    @media screen and (min-width: v.$min-width) {
+        padding-inline-end: 0rem ;
+    }
 }
 
 .feature:nth-child(3) .content_paragraph {
