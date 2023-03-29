@@ -56,36 +56,36 @@
 }
 
 .feature:nth-child(1) > .feature_img {
-    background-image: url(../../../images/mobile/image-transform.jpg);
+    background-image: url(../../images/mobile/image-transform.jpg);
     
     @media screen and (min-width: v.$min-width) {
-        background-image: url(../../../images/desktop/image-transform.jpg);
+        background-image: url(../../images/desktop/image-transform.jpg);
         grid-column: 2;
         grid-row: 1;
     }
 }
 
 .feature:nth-child(2) > .feature_img {
-    background-image: url(../../../images/mobile/image-stand-out.jpg);
+    background-image: url(../../images/mobile/image-stand-out.jpg);
 
     @media screen and (min-width: v.$min-width) {
-        background-image: url(../../../images/desktop/image-stand-out.jpg);
+        background-image: url(../../images/desktop/image-stand-out.jpg);
     }
 }
 
 .feature:nth-child(3) {
-    background-image: url(../../../images/mobile/image-graphic-design.jpg);
+    background-image: url(../../images/mobile/image-graphic-design.jpg);
 
     @media screen and (min-width: v.$min-width) {
-        background-image: url(../../../images/desktop/image-graphic-design.jpg);
+        background-image: url(../../images/desktop/image-graphic-design.jpg);
     }
 }
 
 .feature:nth-child(4) {
-    background-image: url(../../../images/mobile/image-photography.jpg);
+    background-image: url(../../images/mobile/image-photography.jpg);
 
     @media screen and (min-width: v.$min-width) {
-        background-image: url(../../../images/desktop/image-photography.jpg);
+        background-image: url(../../images/desktop/image-photography.jpg);
     }
 }
 

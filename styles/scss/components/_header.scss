@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as v;
 
 .head {
-    background-image: url(../../../images/mobile/image-header.jpg);
+    background-image: url(../../images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     height: 33.75rem;
 
     @media screen and (min-width: v.$min-width) {
-        background-image: url(../../../images/desktop/image-header.jpg);
+        background-image: url(../../images/desktop/image-header.jpg);
         padding: 2rem;
         height: 50rem;
     }
