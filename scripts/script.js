@@ -3,6 +3,8 @@ const menu = document.querySelector(".nav_menu");
 menu.setAttribute("status", "closed");
 const contactButton = document.querySelector(".menu_button");
 const redirects = document.querySelectorAll(".content_redirect");
+const footerLinks = document.querySelectorAll(".option");
+const socialIcons = document.querySelectorAll("i");
 
 const temp = document.querySelector(".feature_content");
 
@@ -48,6 +50,29 @@ for(const redirect of redirects) {
     redirect.addEventListener("mouseout", (event) => {
         redirect.children[0].style.opacity = "30%";
         redirect.children[0].style.transition = "all .25s ease-in-out";
+    });
+}
+
+// change text color
+for(const option of footerLinks) {
+    option.addEventListener("mouseover", (event) => {
+        option.style.transition = "all .5s ease-in-out";
+    });
+    option.addEventListener("mouseout", (event) => {
+        option.style.transition = "all .5s ease-in-out";
+    });
+}
+
+// change color smoothly
+for(const icon of socialIcons) {
+    icon.addEventListener("click", (event) => {
+        window.scrollTo(0,0);
+    });
+    icon.addEventListener("mouseover", (event) => {
+        icon.style.transition = "all .5s ease-in-out";
+    });
+    icon.addEventListener("mouseout", (event) => {
+        icon.style.transition = "all .5s ease-in-out";
     });
 }
 

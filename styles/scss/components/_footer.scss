@@ -24,6 +24,15 @@
     color: v.$dark-moderate-cyan;
 }
 
+.option {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: v.$almost-white;
+    }
+}
+
 .social {
     display: flex;
     justify-content: center;
@@ -31,4 +40,9 @@
     font-size: 1.5rem;
     color: v.$dark-desaturated-cyan;
     padding-block: 2rem 1rem;
+
+    i:hover {
+        color: v.$almost-white;
+        cursor: pointer;
+    }
 }
