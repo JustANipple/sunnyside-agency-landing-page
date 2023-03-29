@@ -22,14 +22,14 @@
     font-family: v.$ff-barlow;
     font-size: v.$fs;
     color: v.$dark-moderate-cyan;
-}
 
-.option {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover {
-        color: v.$almost-white;
+    .option {
+        text-decoration: none;
+        color: inherit;
+    
+        &:hover {
+            color: v.$almost-white;
+        }
     }
 }
 

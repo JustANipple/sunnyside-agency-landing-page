@@ -63,7 +63,19 @@
 
     @media screen and (min-width: v.$min-width) {
         display: flex;
+
+        .option {
+            text-decoration: none;
+            color: v.$almost-white;
+        }
     }
+
+    .option {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
 }
 
 .menu_button {

@@ -151,6 +151,14 @@ p, h1, h2, h3, h4, h5, h6 {
   .menu_options {
     display: flex;
   }
+  .menu_options .option {
+    text-decoration: none;
+    color: hsl(20, 75%, 98%);
+  }
+}
+.menu_options .option {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu_button {
@@ -580,12 +588,11 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.125rem;
   color: hsl(168, 34%, 41%);
 }
-
-.option {
+.foot_options .option {
   text-decoration: none;
   color: inherit;
 }
-.option:hover {
+.foot_options .option:hover {
   color: hsl(20, 75%, 98%);
 }
 
