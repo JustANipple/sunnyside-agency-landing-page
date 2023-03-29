@@ -611,4 +611,8 @@ p, h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(7, 99%, 70%);
   transition: background-color 0.5s ease-in-out;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ====== Reset ====== */
+/* ====== Variables ====== */
+/* ====== Components ====== *//*# sourceMappingURL=main.css.map */

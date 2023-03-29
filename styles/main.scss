@@ -1,6 +1,8 @@
+/* ====== Reset ====== */
 @use "scss/base/reset";
+/* ====== Variables ====== */
 @use "scss/abstracts/variables" as v;
-
+/* ====== Components ====== */
 @use "scss/components/header";
 @use "scss/components/nav";
 @use "scss/components/features";
